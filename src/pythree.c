@@ -46,13 +46,15 @@ int main(int argc, char *argv[]) {
         return 2;
     }
 
-    puts("Pythogorean triples: a^2 + b^2 = c^2");
+    puts("Pythagorean triples: a^2 + b^2 = c^2");
     puts("(a, b, c)\n");
     switch (mode) {
       case 0:
+        puts("Mode: all triples");
         pyth_triples(limit);
         break;
       case 1:
+        puts("Mode: filtered triples");
         pyth_triples_filtered(limit);
         break;
       default:
