@@ -1,7 +1,7 @@
 # pythree.c
 Search for pythagorean triples
 
-Example:
+Usage example:
 ```bash
 $ ./pythree 100 1
 # Output:
