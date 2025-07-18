@@ -5,7 +5,7 @@ Usage example:
 ```bash
 $ ./pythree 100 1
 # Output:
-# Pythogorean triples: a^2 + b^2 = c^2
+# Pythagorean triples: a^2 + b^2 = c^2
 # (a, b, c)
 
 # Mode: filtered triples
