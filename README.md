@@ -1,5 +1,5 @@
 # pythree.c
-Search for pythagorean triples
+Search for pythagorean triples (*a² + b² = c²*)
 
 Usage example:
 ```bash
@@ -18,3 +18,6 @@ Build:
 ```bash
 $ make
 ```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
