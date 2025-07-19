@@ -1,5 +1,7 @@
 # pythree.c
-Search for pythagorean triples (*a² + b² = c²*)
+Search for pythagorean triples
+
+*a² + b² = c²*, where a, b, c ∈ ℕ
 
 Usage example:
 ```bash
