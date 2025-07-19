@@ -2,35 +2,36 @@
 #include <stdlib.h>
 #include <math.h>
 
-inline void pyth_triples(int n)
+inline void pyth_triples(int limit)
 {
-  for (long a = 1; a <= n; a++) {
-    for (long b = a; b <= n; b++) {
+  for (long a = 1; a <= limit; a++) {
+    for (long b = a; b <= limit; b++) {
       long c2 = (a * a) + (b * b);
       long c = (long) sqrt(c2); 
       
-      if (c * c == c2 && c <= n) {
+      if (c * c == c2 && c <= limit) {
         printf("(%ld, %ld, %ld)\n", a, b, c);
       }
     }
   }
 }
 
-inline void pyth_triples_filtered(int n)
+inline void pyth_triples_filtered(int limit)
 {
-  for (long a = 1; a <= n; a++) {
-    for (long b = a; b <= n; b++) {
+  for (long a = 1; a <= limit; a++) {
+    for (long b = a; b <= limit; b++) {
       long c2 = (a * a) + (b * b);
       long c = (long) sqrt(c2); 
       
-      if (c * c == c2 && c <= n && b == c - 1) {
+      if (c * c == c2 && c <= limit && b == c - 1) {
         printf("(%ld, %ld, %ld)\n", a, b, c);
       }
     }
   }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char **argv)
+{
     if (argc < 3) {
         puts("Usage: pythree <limit> <mode>");
         puts("Modes:\n 0 = all triples\n 1 = filtered (c = b + 1)");
