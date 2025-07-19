@@ -59,7 +59,7 @@ int main(int argc, char **argv)
         pyth_triples_filtered(limit);
         break;
       default:
-        puts("Invalid mode. Use 0, 1 or 2");
+        puts("Invalid mode. Use 0 or 1");
         return 3;
     }
 

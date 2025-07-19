@@ -1,4 +1,4 @@
-CC		= cc
+CC		= clang
 CFLAGS		= -std=c99 -Wall -Wextra -O3
 
 all: clean build
